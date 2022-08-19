@@ -12,7 +12,12 @@ func sum(a, b int) int {
 	return sum
 }
 
+func hello() {
+	fmt.Println("hello")
+}
+
 func main() {
 	helloMsg("hello")
 	sum(10, 15)
+	hello()
 }
