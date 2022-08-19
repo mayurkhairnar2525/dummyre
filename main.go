@@ -2,12 +2,17 @@ package main
 
 import "fmt"
 
-func main() {
-	fmt.Println("hello")
-	fmt.Println("hello")
-	fmt.Println("hello")
-	fmt.Println("hello")
-	fmt.Println("hello")
+func helloMsg(msg string) {
+	fmt.Println(msg)
+}
 
-	fmt.Println("New 18 August")
+func sum(a, b int) int {
+	sum := a + b
+	fmt.Println(sum)
+	return sum
+}
+
+func main() {
+	helloMsg("hello")
+	sum(10, 15)
 }
