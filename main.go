@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // Sorting algo
 
 func bubbleSort(arr []int) {
@@ -33,6 +35,10 @@ func selectionSort(arr []int) {
 	}
 }
 
-func main() {
+func Hello() {
+	fmt.Println("hello")
+}
 
+func main() {
+	Hello()
 }
