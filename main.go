@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 // Sorting algo
+// bubble,Insertion,Selection
 
 func bubbleSort(arr []int) {
 	for i := 0; i < len(arr)-1; i++ {
