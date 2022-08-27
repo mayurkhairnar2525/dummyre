@@ -35,6 +35,10 @@ func selectionSort(arr []int) {
 	}
 }
 
+func sayHello(msg string) {
+	fmt.Println("Message:", msg)
+}
+
 func main() {
 	arr := []int{50, 10, 40, 30, 20, 00}
 	bubbleSort(arr)
@@ -45,4 +49,6 @@ func main() {
 
 	selectionSort(arr)
 	fmt.Println(arr)
+
+	sayHello("Hello")
 }
