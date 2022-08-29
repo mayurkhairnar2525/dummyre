@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-// Sorting algo
+// sorting algo
 
-func bubbleSort(arr []int) {
+func bubbleSort(arr []int) int {
 	for i := 0; i < len(arr)-1; i++ {
 		for j := 0; j < len(arr)-i-1; j++ {
 			if arr[j] > arr[j+1] {
@@ -12,9 +12,10 @@ func bubbleSort(arr []int) {
 			}
 		}
 	}
+	return 0
 }
 
-func insertionSort(arr []int) {
+func insertionSort(arr []int) int {
 	for i := 1; i < len(arr); i++ {
 		for j := 0; j < i; j++ {
 			if arr[j] > arr[i] {
@@ -22,9 +23,10 @@ func insertionSort(arr []int) {
 			}
 		}
 	}
+	return 0
 }
 
-func selectionSort(arr []int) {
+func selectionSort(arr []int) int {
 	for i := 0; i < len(arr)-1; i++ {
 		midIndex := i
 		for j := i + 1; j < len(arr); j++ {
@@ -33,14 +35,11 @@ func selectionSort(arr []int) {
 			}
 		}
 	}
-}
-
-func sayHello(msg string) {
-	fmt.Println("Message:", msg)
+	return 0
 }
 
 func main() {
-	arr := []int{50, 10, 40, 30, 20, 00}
+	arr := []int{50, 20, 40, 10, 30}
 	bubbleSort(arr)
 	fmt.Println(arr)
 
@@ -49,6 +48,4 @@ func main() {
 
 	selectionSort(arr)
 	fmt.Println(arr)
-
-	sayHello("Hello")
 }
