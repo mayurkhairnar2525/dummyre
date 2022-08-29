@@ -42,6 +42,17 @@ func hello(msg string) {
 	fmt.Println("Message:", msg)
 }
 
+func checkType(t interface{}) {
+	switch v := t.(type) {
+	case string:
+		fmt.Println("string")
+	case int:
+		fmt.Println("int")
+	default:
+		fmt.Printf("Unknown:%T\n", v)
+	}
+}
+
 func main() {
 	arr := []int{50, 20, 40, 10, 30}
 	bubbleSort(arr)
@@ -54,4 +65,10 @@ func main() {
 	fmt.Println(arr)
 
 	hello("Hey!")
+
+	checkType("hello")
+	checkType(25)
+	checkType(true)
+	checkType(10 + 15)
+	checkType(10 + 15i)
 }
